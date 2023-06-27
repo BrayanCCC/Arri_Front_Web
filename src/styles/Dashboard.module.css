@@ -1,0 +1,108 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  align-items: center;
+  margin: 0 1%;
+  gap: 1.5%;
+}
+
+.lista {
+  background-color: rgb(27, 27, 27);
+  border: 0.8px solid #6b6d6d;
+  border-radius: 10px;
+}
+
+.lista h3 {
+  margin-top: 5%;
+  color: white !important;
+  padding-bottom: 5px;
+  border-bottom: white solid 2px;
+}
+
+.listas {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.lista ul li {
+  color: white;
+  margin: 10px 0;
+  font-size: smaller;
+}
+
+.vista {
+  max-height: 600px;
+  overflow: auto;
+  position: static;
+}
+
+.vista table {
+  font-size: 2.3vh;
+  border-radius: 15px;
+  border-collapse: collapse;
+  border: black solid 1px;
+
+}
+.vista table thead,
+.vista table tbody {
+  border: black solid 1px; 
+}
+
+.vista table thead th,
+.vista table tbody td {
+  width: 115px;
+  height: 45px;
+  padding: 1px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.filt {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 2%;
+}
+
+.filt input {
+  width: 55%;
+  height: 100%;
+}
+
+.filt button {
+  height: 50px;
+  width: 105px;
+  border-radius: 5px;
+  border: #8e9094 solid 1px;
+  transition: width 0.5s ease, transform 0.3s ease;
+  color: #cfd2db;
+  background-color: #232324;
+font-size: 2.4vh;
+}
+
+.filt button:hover {
+  width: 110px;
+  background-color: #2c2c2e;
+}
+
+.MuiCircularProgress-indeterminate {
+  animation: circular-rotate 1.4s linear infinite;
+}
+
+@keyframes circular-rotate {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
