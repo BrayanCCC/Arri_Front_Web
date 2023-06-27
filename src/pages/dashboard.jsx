@@ -5,11 +5,9 @@ import React, { useState, useEffect } from "react";
 export function Dashboard() {
   const [selectedOptionsList, setSelectedOptionsList] = useState([]);
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
-  const [selectedItemData, setSelectedItemData] = useState([]);
 
   const handleItemClick = (index) => {
     setSelectedItemIndex(index);
-    setSelectedItemData([selectedOptionsList[index]]);
   };
 
   useEffect(() => {
