@@ -1,7 +1,7 @@
 class ServerRequest {
   async register(nombre, correo, contraseña) {
     try {
-      const response = await fetch("http://localhost:4000/api/arri/register", {
+      const response = await fetch("https://www.arri.online/api/arri/register", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -20,7 +20,7 @@ class ServerRequest {
 
   async login(correo, contraseña) {
     try {
-      const response = await fetch("http://localhost:4000/api/arri/login", {
+      const response = await fetch("https://www.arri.online/api/arri/login", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -40,7 +40,7 @@ class ServerRequest {
   async getInstituciones() {
     try {
       const response = await fetch(
-        "http://localhost:4000/api/arri/instituciones",
+        "https://www.arri.online/api/arri/instituciones",
         {
           headers: {
             "x-access-token": localStorage.getItem("token"),
@@ -60,7 +60,7 @@ class ServerRequest {
 
   async load(institucion) {
     try {
-      const response = await fetch("http://localhost:4000/api/arri/load", {
+      const response = await fetch("https://www.arri.online/api/arri/load", {
         method: "POST",
         headers: {
           "x-access-token": localStorage.getItem("token"),
@@ -80,7 +80,7 @@ class ServerRequest {
 
   async instiUser() {
     try {
-      const response = await fetch("http://localhost:4000/api/arri/instiUser", {
+      const response = await fetch("https://www.arri.online/api/arri/instiUser", {
         method: "POST",
         headers: {
           "x-access-token": localStorage.getItem("token"),
@@ -99,7 +99,7 @@ class ServerRequest {
 
   async estadisticas(institucion) {
     try {
-      const response = await fetch("http://localhost:4000/api/arri/estadisticas", {
+      const response = await fetch("https://www.arri.online/api/arri/estadisticas", {
         method: "POST",
         headers: {
           "x-access-token": localStorage.getItem("token"),
